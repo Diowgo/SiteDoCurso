@@ -61,7 +61,7 @@
             let randomRight = Math.floor(Math.random() * (max - min + 1)) + min;
             let randomTop = Math.floor(Math.random() * (max - min + 1)) + min;
             button.style.top = randomTop + "px";
-            button.style.right = randomRight + "px";
+            button.style.right = randomRight - 400 + "px";
             if (randomRight > 700) {
                 window.open("index.html", "_self")
             }
