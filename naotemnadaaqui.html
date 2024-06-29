@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="font.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        body h1 {
+            width: fit-content;
+        }
+
+        body button {
+            width: 30vw;
+            width: 200px;
+            height: 50px;
+            background: #fff;
+            border-radius: 50px;
+            font-size: 18px;
+            transition: 1s;
+        }
+
+        body button:hover {
+            background: linear-gradient(45deg,#ff7e5f,#feb47b,#ffed86,#9feb8f,#5fbfff,#9b8eff);
+            background-size: 700% 700%;
+            animation: shine 3s linear infinite alternate;
+            cursor: pointer;
+            transform: scale(105%);
+            border: 0;
+            color: #fff;
+            transform: translate(1000px);
+
+        }
+
+        @keyframes shine {
+            0% {background-position: 0% 50%} to {background-position: 100% 50%}
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <h1 class="roboto-thin">Não tem nada aqui.</h1>
+    <button class="roboto-black" onclick="window.open('index.html', '_self')">Voltar</button>
+</body>
+</html>

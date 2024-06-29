@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="font.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      width: 100%;
+      height: 80px;
+      background: #f0f0f048;
+      position: fixed;
+    }
+
+    .nav-container {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+      margin: auto;
+      max-width: 1280px;
+      width: 100%;
+    }
+  
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 50px;
+    }
+
+    .logo-container h1 {
+      font-size: 30px;
+    }
+
+
+    .contato button {
+      transition: .3s;
+      width: 200px;
+      height: 50px;
+      background: #ffffff;
+      border: 1px solid #000;
+      border-radius: 50px;
+      font-size: 16px;
+    }
+
+    .contato button:hover {
+      transform: scale(105%);
+      cursor: pointer;
+      background: linear-gradient(45deg,#ff7e5f,#feb47b,#ffed86,#9feb8f,#5fbfff,#9b8eff);
+      background-size: 700% 700%;
+      animation: shine 3s linear infinite alternate;
+      box-shadow: 0 0 10px 10px #fff;
+      border: 0;
+      color: #fff;
+    }
+
+    .hero {
+      background: #fff;
+      height: 900px;
+    }
+
+    .hero-container {
+      margin: auto;
+      max-width: 1280px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .hero-call {
+      width: 30vw;
+      text-wrap: wrap;
+      text-align: center;
+    }
+
+    .hero-call h1 {
+      line-height: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-call h2 {
+      margin-bottom: 1rem;
+    }
+
+    .hero-call button {
+      transition: .3s;
+      width: 300px;
+      height: 50px;
+      font-size: 16px;
+      border-radius: 50px;
+      background: linear-gradient(45deg,#ff7e5f,#feb47b,#ffed86,#9feb8f,#5fbfff,#9b8eff);
+      background-size: 700% 700%;
+      animation: shine 3s linear infinite alternate;
+      border: 0;
+    }
+
+    .hero-call button:hover {
+      cursor: pointer;
+      border: none;
+      transform: scale(105%);
+      color: #fff
+    }
+
+    @keyframes shine {
+      0% {background-position: 0% 50%} to {background-position: 100% 50%}
+    }
+
+    .depoimentos-container {
+      width: 100%;
+      background: #fafafa;
+
+    }
+
+    .depoimentos {
+      height: 1440px;
+      max-width: 1280px;
+      width: 100%;
+      margin: auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .depoimentos > h1 {
+      margin-top: 100px;
+      margin-bottom: 50px
+    }
+
+    .container-depoimentos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .container-depoimentos > div{
+      padding: 30px;
+      width: 360px;
+      height: fit-content;
+      background-color: #fff;
+      border-radius: 50px;
+      margin: 10px;
+    }
+
+    .container-depoimentos > div > h1 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: #101010
+    }
+    
+    .container-depoimentos > div > p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 24px;
+    }
+
+    footer {
+      height: 30vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg,#ff7e5f,#feb47b,#ffed86,#9feb8f,#5fbfff,#9b8eff);
+      background-size: 700% 700%;
+      animation: 10s shine linear infinite alternate;
+      font-size: 20px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo-container roboto-black">
+        <h1>Análise e Des. Sistemas</h1>
+      </div>
+      <div class="contato">
+        <button class="roboto-black" onclick="window.open('naotemnadaaqui.html', '_self')">Saiba mais</button>
+      </div>
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="hero-container">
+        <div class="hero-call">
+          <h1 class="roboto-black">Curso Técnico de Análise e Desenvolvimento de Sistemas</h1>
+          <h2 class="roboto-regular">Aprenda com professores experientes e conquiste seu tão sonhado diploma na área da computação.</h2>
+          <button class="roboto-black" onclick="window.open('naotemnadaaqui.html', '_self')">Quero participar</button>
+        </div>
+        <div class="hero-image">
+          <img src="hero-image.png" alt="imagem">
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="depoimentos-container">
+    <div class="depoimentos">
+      <h1 class="roboto-black">Confira nossos depoimentos!</h1>
+      <div class="container-depoimentos">
+        <div>
+          <h1>Diogo Vieira dos Santos, Cambira</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus metus mauris, maximus a venenatis faucibus, eleifend in dui. Integer tincidunt dictum sem, eu facilisis sapien eleifend vel.</p>
+        </div>
+        <div>
+          <h1>Diogo Vieira dos Santos, Cambira</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus metus mauris, maximus a venenatis faucibus, eleifend in dui. Integer tincidunt dictum sem, eu facilisis sapien eleifend vel.</p>
+        </div>
+        <div>
+          <h1>Diogo Vieira dos Santos, Cambira</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus metus mauris, maximus a venenatis faucibus, eleifend in dui. Integer tincidunt dictum sem, eu facilisis sapien eleifend vel.</p>
+        </div>
+        <div>
+          <h1>Diogo Vieira dos Santos, Cambira</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus metus mauris, maximus a venenatis faucibus, eleifend in dui. Integer tincidunt dictum sem, eu facilisis sapien eleifend vel.</p>
+        </div>
+        <div>
+          <h1>Diogo Vieira dos Santos, Cambira</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus metus mauris, maximus a venenatis faucibus, eleifend in dui. Integer tincidunt dictum sem, eu facilisis sapien eleifend vel.</p>
+        </div>
+        <div>
+          <h1>Diogo Vieira dos Santos, Cambira</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus metus mauris, maximus a venenatis faucibus, eleifend in dui. Integer tincidunt dictum sem, eu facilisis sapien eleifend vel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="roboto-regular">Todos os direitos reservados à turma 2º Desenvolvimento de Sistemas do CCM Rosa Delúcia Calsavara.</p>
+  </footer>
+</body>
+</html>
