@@ -58,11 +58,16 @@
         const button = document.getElementById("button");
         const n = 
         button.onclick = function() {
-            let randomRight = Math.floor(Math.random() * (max - min + 1)) + min;
+            let randomY = Math.floor(Math.random() * (max - min + 1)) + min;
             let randomTop = Math.floor(Math.random() * (max - min + 1)) + min;
             button.style.top = randomTop + "px";
-            button.style.right = randomRight + 800 + "px";
-            if (randomRight > 700) {
+            button.style.right = randomY + 800 + "px";
+            button.style.left = 0
+            if (randomY > 400) {
+                button.style.right = 0;
+                button.style.left = randomY + 800 + "px";
+            }
+            if (randomY > 790) {
                 window.open("index.html", "_self")
             }
         }
